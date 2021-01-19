@@ -1,8 +1,10 @@
 name: Pull Request on Branch Push
 on:
-  push:
+  pull_request:
     branches:
       - hotfix
+    types:
+      - closed
 
 jobs:
   auto-pull-request:
