@@ -2,13 +2,13 @@ name: Pull Request on Branch Push
 on:
   pull_request:
     branches:
-      - hotfix
+      - 'hotfix'
     types:
       - closed
 
 jobs:
   auto-pull-request:
-    if: github.event.pull_request.merged == 'true'
+    # if: github.event.pull_request.merged == 'true'
     name: PullRequestAction
     runs-on: ubuntu-latest
     steps:
